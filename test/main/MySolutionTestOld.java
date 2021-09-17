@@ -13,7 +13,7 @@ public class MySolutionTestOld {
         arr = new int[]{1, 2, 3, 4, 5};
     }
 
-    @AfterClass
+    /*@AfterClass
     public static void tearDownClass() {
         System.out.println("finished");
     }
@@ -69,6 +69,6 @@ public class MySolutionTestOld {
         }
 
         return arr;
-    }
+    }*/
 
 }

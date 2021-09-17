@@ -7,7 +7,27 @@ import static org.junit.jupiter.api.Assertions.*;
 class MySolutionTest {
 
     @Test
+    void getLastNumberNull() {
+        int result = MySolution.getLastNumber(null);
+        assertEquals(-1, result);
+    }
+
+    @Test
+    void getLastNumberEmpty() {
+        int result = MySolution.getLastNumber(new int[]{});
+        assertEquals(-1, result);
+    }
+
+    @Test
     void getLastNumber() {
+        int result = MySolution.getLastNumber(new int[]{3,3,3});
+        assertEquals(3, result);
+    }
+
+    @Test
+    void getLastNumberNegative() {
+        int result = MySolution.getLastNumber(new int[]{-3,-3,-3});
+        assertEquals(-3, result);
     }
 
     @Test
