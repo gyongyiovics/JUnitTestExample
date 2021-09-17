@@ -1,7 +1,5 @@
 package main;
 
-import main.tasks.logger.LogHandler;
-
 public class Main {
 
     public static void main(String[] args) {
