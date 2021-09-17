@@ -1,6 +1,5 @@
-package unimplemented;
+package main;
 
-import main.MySolution;
 import org.junit.*;
 
 public class MySolutionTestOld {
