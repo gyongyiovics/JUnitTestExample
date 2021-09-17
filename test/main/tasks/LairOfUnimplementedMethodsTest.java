@@ -7,6 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LairOfUnimplementedMethodsTest {
     private static LairOfUnimplementedMethods unimplemented;
+    private char[] chars = new char[]{'a', 'b', 'c'};
+    private char[] charsEmpty = new char[]{};
+    private char[] charsNull = null;
 
     @BeforeClass
     public static void setUp(){
@@ -229,19 +232,19 @@ class LairOfUnimplementedMethodsTest {
 
     @Test
     public void testConcatLetters() {
-        String result = unimplemented.concatLetters(new char[]{'a', 'b', 'c'});
+        String result = LairOfUnimplementedMethods.concatLetters(chars);
         assertEquals("abc", result);
     }
 
     @Test
     public void testConcatLettersNull() {
-        String result = unimplemented.concatLetters(null);
+        String result = LairOfUnimplementedMethods.concatLetters(charsNull);
         assertNull(result);
     }
 
     @Test
     public void testConcatLettersEmpty() {
-        String result = unimplemented.concatLetters(new char[]{});
+        String result = unimplemented.concatLetters(charsEmpty);
         assertEquals("", result);
     }
 

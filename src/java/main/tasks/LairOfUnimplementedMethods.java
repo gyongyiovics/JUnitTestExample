@@ -87,11 +87,20 @@ public class LairOfUnimplementedMethods {
      *      or null if the array is null,<br>
      *      or a blank String if the array is empty
      */
-    public String concatLetters(char[] letters) {
+    public static String concatLetters(char[] letters) {
         /* megírandó...
             ellenőrizni kell, hogy a letters null értékű-e vagy üres-e
             össze kell fűzni a letters elemeit String-gé, a 0. indextől kezdve
          */
+        if(letters == null){
+            return null;
+        } else if (letters.length > 0) {
+            String concatenated = "";
+            for (int i = 0; i < letters.length; i++) {
+                concatenated += letters[i];
+            }
+            return concatenated;
+        }
         return "";
     }
 
